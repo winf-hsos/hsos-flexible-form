@@ -5,13 +5,16 @@
   "dependencies": {
     "@polymer/neon-animation": "^3.0.0-pre.21",
     "@polymer/paper-checkbox": "^3.0.0-pre.21",
+    "@polymer/paper-button": "^3.0.0-pre.21",
     "@polymer/paper-dropdown-menu": "^3.0.0-pre.21",
     "@polymer/paper-input": "^3.0.0-pre.21",
     "@polymer/paper-item": "^3.0.0-pre.21",
     "@polymer/paper-listbox": "^3.0.0-pre.21",
+    "@polymer/paper-spinner": "^3.0.0-pre.21",
     "@polymer/polymer": "^3.0.0",
     "npm": "^6.1.0",
-    "web-animations-js": "^2.3.1"
+    "web-animations-js": "^2.3.1",
+    "hsos-firebase": "0.0.3"
   },
   "devDependencies": {
     "@polymer/iron-demo-helpers": "^3.0.0-pre.19",

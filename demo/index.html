@@ -8,6 +8,7 @@
   <title>hsos-flexible-form demo</title>
   <script src="../node_modules/web-animations-js/web-animations-next-lite.min.js"></script>
   <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
 
   <script type="module">
     import '@polymer/iron-demo-helpers/demo-pages-shared-styles';
@@ -28,16 +29,15 @@
     <demo-snippet>
       <template>
         <hsos-flexible-form config='{ "elements" : [ 
-            { "type": "input", "label": "First Name" }, 
-            { "type": "input", "label": "Last Name" }, 
-            { "type": "input", "label": "ZIP Code", "inputType": "number" },
-            { "type": "checkbox", "label": "I want to receive the newsletter" },            
-            { "type": "input", "label": "Last Name" }, 
-            { "type": "checkbox", "label": "Call me when you have something for me" },
-            { "type": "dropdown", "label": "Select your room", "choices" : [ "101", "102", "103" ] },
-            { "type": "dropdown", "label": "What are you?", "horizontalAlign": "center", "choices" : [ "Buyer", "Seller", "Batman" ] }
-            ] }'>
-          </hsos-flexible-form>
+            { "type": "input", "label": "First Name", "required": true, "db": "firstname" }, 
+            { "type": "input", "label": "Last Name", "required": true, "db": "lastname" }, 
+            { "type": "input", "label": "ZIP Code", "inputType": "number", "db": "zip" },
+            { "type": "checkbox", "label": "I want to receive the newsletter", "db": "newsletter" },            
+            { "type": "checkbox", "label": "Call me when you have something for me", "db": "callme" },
+            { "type": "dropdown", "label": "Select your room", "choices" : [ "101", "102", "103" ], "db": "roomno" },
+            { "type": "dropdown", "label": "What are you?", "horizontalAlign": "center", "choices" : [ "Buyer", "Seller", "Batman" ], "db": "type" }
+            ] }' db-key='nmeseth'>
+        </hsos-flexible-form>
       </template>
     </demo-snippet>
   </div>
