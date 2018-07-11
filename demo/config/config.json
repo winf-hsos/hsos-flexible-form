@@ -1,0 +1,9 @@
+{
+    "hsosFlexibleForm": [
+        {
+            "type": "input",
+            "content": "text",
+            "placeholder": "Please enter some text"
+        }
+    ]
+}

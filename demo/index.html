@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+  <title>hsos-flexible-form demo</title>
+  <script src="../node_modules/web-animations-js/web-animations-next-lite.min.js"></script>
+  <script src="../node_modules/@webcomponents/webcomponentsjs/webcomponents-loader.js"></script>
+
+  <script type="module">
+    import '@polymer/iron-demo-helpers/demo-pages-shared-styles';
+    import '@polymer/iron-demo-helpers/demo-snippet';
+  </script>
+
+  <script type="module" src="../hsos-flexible-form.js"></script>
+
+  <custom-style>
+    <style is="custom-style" include="demo-pages-shared-styles">
+    </style>
+  </custom-style>
+</head>
+
+<body>
+  <div class="vertical-section-container centered">
+    <h3>Basic hsos-flexible-form demo</h3>
+    <demo-snippet>
+      <template>
+        <hsos-flexible-form config='{ "elements" : [ 
+            { "type": "input", "label": "First Name" }, 
+            { "type": "input", "label": "Last Name" }, 
+            { "type": "input", "label": "ZIP Code", "inputType": "number" },
+            { "type": "checkbox", "label": "I want to receive the newsletter" },            
+            { "type": "input", "label": "Last Name" }, 
+            { "type": "checkbox", "label": "Call me when you have something for me" },
+            { "type": "dropdown", "label": "Select your room", "choices" : [ "101", "102", "103" ] },
+            { "type": "dropdown", "label": "What are you?", "horizontalAlign": "center", "choices" : [ "Buyer", "Seller", "Batman" ] }
+            ] }'>
+          </hsos-flexible-form>
+      </template>
+    </demo-snippet>
+  </div>
+</body>
+
+</html>

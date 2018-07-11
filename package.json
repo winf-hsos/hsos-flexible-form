@@ -1,0 +1,21 @@
+{
+  "name": "hsos-flexible-form",
+  "description": "A flexible and configurable form built with Polymer 3",
+  "main": "hsos-flexible-form.js",
+  "dependencies": {
+    "@polymer/neon-animation": "^3.0.0-pre.21",
+    "@polymer/paper-checkbox": "^3.0.0-pre.21",
+    "@polymer/paper-dropdown-menu": "^3.0.0-pre.21",
+    "@polymer/paper-input": "^3.0.0-pre.21",
+    "@polymer/paper-item": "^3.0.0-pre.21",
+    "@polymer/paper-listbox": "^3.0.0-pre.21",
+    "@polymer/polymer": "^3.0.0",
+    "npm": "^6.1.0",
+    "web-animations-js": "^2.3.1"
+  },
+  "devDependencies": {
+    "@polymer/iron-demo-helpers": "^3.0.0-pre.19",
+    "@webcomponents/webcomponentsjs": "^2.0.0",
+    "wct-browser-legacy": "^1.0.0"
+  }
+}
